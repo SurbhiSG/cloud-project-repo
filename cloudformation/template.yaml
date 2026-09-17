@@ -1,0 +1,8 @@
+Description: 'S3 static website configuration template'
+Resources:
+  Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: 'Surbhi-1st-cloud-bucket'
+      WebsiteConfiguration:
+        IndexDocument: index.html
