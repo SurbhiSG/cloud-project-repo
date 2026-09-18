@@ -23,3 +23,7 @@ Resources:
             Effect: Allow
             Principal: '*'
             Resource: 'arn:aws:s3:::surbhi-1st-cloud-bucket/*'
+Outputs:
+  WebsiteURL:
+    Value: !GetAtt Bucket.WebsiteURL
+    Description: URL for website hosted on S3
